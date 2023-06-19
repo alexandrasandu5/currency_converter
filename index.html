@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com/" />
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Montserrat:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&family=Roboto:wght@300&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <title>Converter</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo"><a href="#">The Converter</a></div>
+        </header>
+        <div class="wrapper">
+            <div class="hero">
+                <div class="amount">
+                    <p>Enter Amount</p>
+                    <input type="text" value="1" id="amount" />
+                </div>
+                <div class="currencies">
+                    <div class="from-currency">
+                        <p>From</p>
+                        <select id="from">
+                            <!--Options imported from JS-->
+                        </select>
+                    </div>
+                    <div class="arrow-icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <div class="to-currency">
+                        <p>To</p>
+                        <select id="to">
+                            <!--Options imported from JS-->
+                        </select>
+                    </div>
+                </div>
+                <div class="result"></div>
+                <div class="button">
+                    <button id="convert" class="get-rate">
+                        Get Exchange Rate
+                    </button>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <p>Copyright 2023</p>
+        </footer>
+    </body>
+</html>
