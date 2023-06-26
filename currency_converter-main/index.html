@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto:wght@300;400;500;700&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="./index.js" defer></script>
+    <title>Converter</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo"><a href="#">The Converter</a></div>
+    </header>
+    <div class="wrapper">
+      <div class="hero">
+        <div class="amount">
+          <p class="label-big">Enter Amount</p>
+          <input type="number" value="1" id="amount" />
+        </div>
+        <div class="currencies">
+          <div class="from-currency">
+            <p class="label">From</p>
+            <select id="from">
+              <!--Options imported from JS-->
+            </select>
+          </div>
+          <div class="arrow-icon">
+            <i class="fas fa-exchange-alt"></i>
+          </div>
+          <div class="to-currency">
+            <p class="label">To</p>
+            <select id="to">
+              <!--Options imported from JS-->
+            </select>
+          </div>
+        </div>
+        <div class="result"></div>
+        <div class="button">
+          <button id="convert" class="get-rate">
+            <span>Get Exchange Rate</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero">
+      <div class="dates-input">
+        <div class="select-currency">
+          <p class="label-big">Historical Rates of</p>
+          <select id="currency-history">
+            <!--Options imported from JS-->
+          </select>
+        </div>
+
+        <div class="date-history">
+          <p>From</p>
+          <input type="date" name="from" id="date-from" />
+        </div>
+        <div class="date-history">
+          <p>To</p>
+          <input type="date" name="to" id="date-to" />
+        </div>
+        <div class="button-2">
+          <button id="historical-rates" class="get-rate">
+            <span>Get History Rate</span>
+          </button>
+        </div>
+      </div>
+      <ul id="history-result"></ul>
+    </div>
+
+    <footer class="footer">
+      <p>Copyright 2023</p>
+    </footer>
+  </body>
+</html>
